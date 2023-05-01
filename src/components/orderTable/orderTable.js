@@ -29,7 +29,7 @@ const Ordertable = () => {
 
   const getPaginatedUsers = async () => {
     const response = await axios.get(
-      `https://pensionbox-api.onrender.com/api/users/paginatedUsers?page=${currentPage.current}&limit=${limit}`
+      `https://logic-ladder-api.onrender.com/api/users/paginatedUsers?page=${currentPage.current}&limit=${limit}`
     );
     console.log(response);
     setPageCount(response.data.pageCount);
